@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40px"
+    tools:context=".LoginActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="100px"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="50px"
+        android:inputType="textEmailAddress"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:layout_margin="20px"
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textSize="50px"
+        android:inputType="textPassword"
+        android:layout_below="@+id/username"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="20px"
+        android:text="Login"
+        android:textSize="50px"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>
